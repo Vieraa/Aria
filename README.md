@@ -1,4 +1,7 @@
 # Aria
 Project Aria
 
-Tesing functionalities of Git
+Geo-Location-based Social Network
+
+For more details
+http://vieraa.com/ 
