@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:Aria" 
+    x:Class="Aria.AriaPage"
+    BackgroundColor="#69D9EF">
+
+    <!-- Colour hexadecimals
+        Section Header = #3F99A2
+        Text on blue background = White
+        Top and bottom panel (ContentPage background) = #69D9EF 
+        Scroll view = White
+        Plain boxes and square background = #3E9AA4
+        Avatar = #82B4C5
+        Icon = #57CBD7
+
+    -->
+    
+    <RelativeLayout x:Name="relativeLayout">
+       <Label Text="Social Feed" TextColor="White" FontAttributes="Bold" FontSize="25" 
+            VerticalOptions="Center" HorizontalOptions="Center" 
+            RelativeLayout.XConstraint="{ConstraintExpression 
+                    Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-58}"
+            RelativeLayout.YConstraint="{ConstraintExpression 
+                    Type=RelativeToParent, Factor=0.2, Property=Y, Constant=30}"/>
+        
+        <ScrollView BackgroundColor="White" x:Name="scrollView"
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+                    Type=RelativeToParent, Property=Width,Factor=1}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+                    Type=RelativeToParent, Property=Height, Factor=1, Constant=-120}"
+            RelativeLayout.XConstraint="{ConstraintExpression
+                    Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
+            RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToParent, Property=Height, Factor=0, Constant=65}">
+
+            <StackLayout Orientation="Vertical" 
+                x:Name="verticalLayout">
+                
+                <!-- To be done in code-behind -->
+
+            </StackLayout>
+        </ScrollView>
+        
+    </RelativeLayout>
+</ContentPage>
+
+<!-- For testing purposes only
+<StackLayout Orientation="Horizontal"  Margin="0, 10, 0, 5">
+                    <BoxView BackgroundColor="#3F99A2"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        TranslationX="20"
+                        TranslationY="0"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label Text="This is the start of a scroll view" TextColor="#3F99A2" FontSize="20"
+                        TranslationX="25"
+                        TranslationY="5"
+                    HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="0, 5">
+                    <BoxView BackgroundColor="#3F99A2"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        TranslationX="20"
+                        TranslationY="0"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label Text="This is the start of a scroll view" TextColor="#3F99A2" FontSize="20"
+                        TranslationX="25"
+                        TranslationY="0"
+                    HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="0, 5">
+                    <BoxView BackgroundColor="#3F99A2"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        TranslationX="20"
+                        TranslationY="0"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label Text="This is the start of a scroll view" TextColor="#3F99A2" FontSize="20"
+                        TranslationX="25"
+                        TranslationY="0"
+                    HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <BoxView BackgroundColor="#3F99A2"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        TranslationX="20"
+                        TranslationY="0"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label Text="This is the start of a scroll view" TextColor="#3F99A2" FontSize="20"
+                        TranslationX="25"
+                        TranslationY="0"
+                    HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="0, 5">
+                    <BoxView BackgroundColor="#3F99A2"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        TranslationX="20"
+                        TranslationY="0"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label Text="This is the start of a scroll view" TextColor="#3F99A2" FontSize="20"
+                        TranslationX="25"
+                        TranslationY="0"
+                    HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="0, 5">
+                    <BoxView BackgroundColor="#3F99A2"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        TranslationX="20"
+                        TranslationY="0"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label Text="This is the start of a scroll view" TextColor="#3F99A2" FontSize="20"
+                        TranslationX="25"
+                        TranslationY="0"
+                    HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="0, 5">
+                    <BoxView BackgroundColor="#3F99A2"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        TranslationX="20"
+                        TranslationY="0"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label Text="This is the start of a scroll view" TextColor="#3F99A2" FontSize="20"
+                        TranslationX="25"
+                        TranslationY="0"
+                    HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="0, 5">
+                    <BoxView BackgroundColor="#3F99A2"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        TranslationX="20"
+                        TranslationY="0"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label Text="This is the start of a scroll view" TextColor="#3F99A2" FontSize="20"
+                        TranslationX="25"
+                        TranslationY="0"
+                    HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="0, 5">
+                    <BoxView BackgroundColor="#3F99A2"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        TranslationX="20"
+                        TranslationY="0"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label Text="This is the start of a scroll view" TextColor="#3F99A2" FontSize="20"
+                        TranslationX="25"
+                        TranslationY="0"
+                    HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="0, 5">
+                    <BoxView BackgroundColor="#3F99A2"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        TranslationX="20"
+                        TranslationY="0"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label Text="This is the start of a scroll view" TextColor="#3F99A2" FontSize="20"
+                        TranslationX="25"
+                        TranslationY="0"
+                    HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="0, 5">
+                    <BoxView BackgroundColor="#3F99A2"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        TranslationX="20"
+                        TranslationY="0"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label Text="This is the start of a scroll view" TextColor="#3F99A2" FontSize="20"
+                        TranslationX="25"
+                        TranslationY="0"
+                    HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="0, 5">
+                    <BoxView BackgroundColor="#3F99A2"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        TranslationX="20"
+                        TranslationY="0"
+                        HorizontalOptions="Start"/>
+                    
+                    <Label Text="This is the start of a scroll view" TextColor="#3F99A2" FontSize="20"
+                        TranslationX="25"
+                        TranslationY="0"
+                    HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                </StackLayout>
+
+-->
