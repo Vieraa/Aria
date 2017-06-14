@@ -11,7 +11,7 @@
 namespace Aria {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/tanglingtreats/Projects/Aria/Aria/AriaPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/tanglingtreats/Documents/GitHub/Aria/Aria/AriaPage.xaml")]
     public partial class AriaPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

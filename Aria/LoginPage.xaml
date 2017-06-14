@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Aria.LoginPage"
+    BackgroundColor="#1B1B1B">
+
+    <!-- Colour hexadecimals
+        Entry boxes = #2B2B2B
+        Facebook Button = #4267b2
+    -->
+    
+	<RelativeLayout>
+        <Image Source="flawklogo.png"
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Width, Factor=0.5}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Height, Factor=0.5}"
+            RelativeLayout.XConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Width, Factor=0.25}"
+            RelativeLayout.YConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Height, Factor=0.1, Constant=-40}"/> 
+        
+        <Entry Placeholder="Username" TextColor="#AAAAAA" PlaceholderColor="#AAAAAA" BackgroundColor="#454545"
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Width, Factor=0.5, Constant=0}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Height, Factor=0, Constant=40}"
+            RelativeLayout.XConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Width, Factor=0.25}"
+            RelativeLayout.YConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Height, Factor=0.45, Constant=-5}"/>
+        
+        <Entry IsPassword="true" Placeholder="Password" TextColor="#AAAAAA" PlaceholderColor="#AAAAAA" BackgroundColor="#454545"
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Width, Factor=0.5, Constant=0}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Height, Factor=0, Constant=40}"
+            RelativeLayout.XConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Width, Factor=0.25}"
+            RelativeLayout.YConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Height, Factor=0.52, Constant=2}"/>
+        
+        <Label Text="First time here? Sign up now!" TextColor="#AAAAAA" FontSize="17" HorizontalTextAlignment="Center"
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Width, Factor=0.6, Constant=0}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Height, Factor=0, Constant=40}"
+            RelativeLayout.XConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Width, Factor=0.21}"
+            RelativeLayout.YConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Height, Factor=0.60, Constant=15}"/>
+
+        <Button Text="Login with Facebook" TextColor="White" BackgroundColor="#4267b2" Clicked="FacebookLoginBtnClicked"
+            RelativeLayout.XConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Width, Factor=0.3}"
+            RelativeLayout.YConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Height, Factor=0.7}"/>
+    </RelativeLayout>
+</ContentPage>

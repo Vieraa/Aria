@@ -23,16 +23,16 @@ namespace Aria
                         Orientation = StackOrientation.Horizontal,
 
                         Children = {
-                            new BoxView { BackgroundColor = Color.FromHex("3F99A2"),
+                            
+                            new BoxView { BackgroundColor = Color.FromHex("489AA9"),
                                 WidthRequest = 50,
                                 HeightRequest = 50,
-                                TranslationX = 20,
-                                HorizontalOptions = LayoutOptions.Start},
+                                Margin = new Thickness(20, 0) },
+                            
                             new Label { Text = "1st Profile Name",
                                 TextColor = Color.FromHex("3F99A2"),
                                 FontSize = 20.0,
-                                TranslationX = 25,
-                                TranslationY = 0,
+                                Margin = new Thickness(5, 0),
                                 HorizontalTextAlignment = TextAlignment.Center,
                                 VerticalOptions = LayoutOptions.Center}
                         }
@@ -49,15 +49,16 @@ namespace Aria
 						Orientation = StackOrientation.Horizontal,
 
 						Children = {
-							new BoxView { BackgroundColor = Color.FromHex("3F99A2"),
+                            
+							new BoxView { BackgroundColor = Color.FromHex("489AA9"),
 								WidthRequest = 50,
 								HeightRequest = 50,
-								TranslationX = 20 },
+                                Margin = new Thickness(20, 0) },
+                            
 							new Label { Text = i + " Profile Name",
 								TextColor = Color.FromHex("3F99A2"),
 								FontSize = 20.0,
-								TranslationX = 25,
-								TranslationY = 0,
+                                Margin = new Thickness(5, 0),
 								HorizontalTextAlignment = TextAlignment.Center,
 								VerticalOptions = LayoutOptions.Center}
 						}

@@ -8,7 +8,7 @@ namespace Aria
         {
             InitializeComponent();
 
-            MainPage = new AriaPage();
+            MainPage = new ProfilePage();
         }
 
         protected override void OnStart()
