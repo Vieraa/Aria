@@ -11,8 +11,8 @@
 namespace Aria {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/tanglingtreats/Documents/GitHub/Aria/Aria/ProfilePage.xaml")]
-    public partial class ProfilePage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/tanglingtreats/Documents/GitHub/Aria/Aria/LocationsPage.xaml")]
+    public partial class LocationsPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.RelativeLayout relativeLayout;
@@ -24,23 +24,11 @@ namespace Aria {
         private global::Xamarin.Forms.StackLayout verticalLayout;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Image userProfilePic;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label userProfileName;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label userProfileMessage;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ProfilePage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(LocationsPage));
             relativeLayout = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.RelativeLayout>(this, "relativeLayout");
             scrollView = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.ScrollView>(this, "scrollView");
             verticalLayout = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.StackLayout>(this, "verticalLayout");
-            userProfilePic = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Image>(this, "userProfilePic");
-            userProfileName = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Label>(this, "userProfileName");
-            userProfileMessage = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Label>(this, "userProfileMessage");
         }
     }
 }

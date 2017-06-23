@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{2C51F888-84F0-4B8F-B3F3-88C1B89DFCBD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Aria/ProfilePage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Aria/ProfilePage.xaml.cs">
     <Files>
-      <File FileName="Aria/ProfilePage.xaml" Line="49" Column="55" />
-      <File FileName="Aria/ProfilePage.xaml.cs" Line="41" Column="13" />
-      <File FileName="Aria/App.xaml.cs" Line="11" Column="39" />
-      <File FileName="Aria/AriaPage.xaml.cs" Line="27" Column="76" />
-      <File FileName="Aria/AriaPage.xaml" Line="21" Column="23" />
+      <File FileName="Aria/AriaPage.xaml.cs" Line="63" Column="26" />
+      <File FileName="Aria/SocialFeedPage.xaml.cs" Line="9" Column="6" />
+      <File FileName="Aria/ProfilePage.xaml.cs" Line="59" Column="22" />
+      <File FileName="Aria/LoginPage.xaml.cs" Line="60" Column="49" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

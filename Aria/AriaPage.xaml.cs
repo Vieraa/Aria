@@ -2,73 +2,69 @@
 
 namespace Aria
 {
-    public partial class AriaPage : ContentPage
+    public partial class AriaPage : TabbedPage
     {
-        public AriaPage()
+        //-------------------Properties-------------------
+        private static NavigationPage[] _NavPages = new NavigationPage[5];
+
+		private static SocialFeedPage _SocialFeedPage = new SocialFeedPage();
+		private static PromotionsPage _PromotionsPage = new PromotionsPage();
+		private static CheckInPage _CheckInPage = new CheckInPage();
+		private static NotificationsPage _NotificationsPage = new NotificationsPage();
+		private static ProfilePage _ProfilePage = new ProfilePage();
+
+        private LoginPage loginPage = new LoginPage();
+
+
+		//-------------------Methods-------------------
+		public AriaPage()
         {
             InitializeComponent();
-            CreateProfile(9);
+
+            //_NavPages;
+
+            AssignContentToNavPage();
+            AddNavPage();
+
+            App.SetNavPage(_NavPages[0]);
+            App.SetProfilePage(_ProfilePage);
+
+            CheckUserLogin();
         }
 
-        private void CreateProfile(int profileNum = 1)
+        private void AssignContentToNavPage()
         {
-            for (int i = 0; i < profileNum; i++)
-            {
-                if(i == 0)
-                {
-                    var stackLayout = new StackLayout
-                    {
-                        Margin = new Thickness(0, 15, 0, 5),
+            _NavPages[0] = new NavigationPage(_SocialFeedPage);
+            _NavPages[0].Title = "Social Feed";
 
-                        Orientation = StackOrientation.Horizontal,
+            _NavPages[1] = new NavigationPage(_PromotionsPage);
+            _NavPages[1].Title = "Promotions";
 
-                        Children = {
-                            
-                            new BoxView { BackgroundColor = Color.FromHex("489AA9"),
-                                WidthRequest = 50,
-                                HeightRequest = 50,
-                                Margin = new Thickness(20, 0) },
-                            
-                            new Label { Text = "1st Profile Name",
-                                TextColor = Color.FromHex("3F99A2"),
-                                FontSize = 20.0,
-                                Margin = new Thickness(5, 0),
-                                HorizontalTextAlignment = TextAlignment.Center,
-                                VerticalOptions = LayoutOptions.Center}
-                        }
-					};
+            _NavPages[2] = new NavigationPage(_CheckInPage);
+            _NavPages[2].Title = "Check In";
 
-					verticalLayout.Children.Add((stackLayout));
-                }
-                else
-                {
-					var stackLayout = new StackLayout
-					{
-						Margin = new Thickness(0, 5),
+            _NavPages[3] = new NavigationPage(_NotificationsPage);
+            _NavPages[3].Title = "Notifications";
 
-						Orientation = StackOrientation.Horizontal,
-
-						Children = {
-                            
-							new BoxView { BackgroundColor = Color.FromHex("489AA9"),
-								WidthRequest = 50,
-								HeightRequest = 50,
-                                Margin = new Thickness(20, 0) },
-                            
-							new Label { Text = i + " Profile Name",
-								TextColor = Color.FromHex("3F99A2"),
-								FontSize = 20.0,
-                                Margin = new Thickness(5, 0),
-								HorizontalTextAlignment = TextAlignment.Center,
-								VerticalOptions = LayoutOptions.Center}
-						}
-					};
-
-                    verticalLayout.Children.Add((stackLayout));
-                }
-            }
-
-            Content = relativeLayout;
+            _NavPages[4] = new NavigationPage(_ProfilePage);
+            _NavPages[4].Title = "Profile";
         }
+
+        private void AddNavPage()
+        {
+            for (int i = 0; i < _NavPages.Length; i++)
+            {
+                Children.Add(_NavPages[i]);
+            }
+        }
+
+        private void CheckUserLogin()
+        {
+			if (!App.IsLoggedIn())
+			{
+				Navigation.PushModalAsync(loginPage);
+			}
+        }
+
     }
 }

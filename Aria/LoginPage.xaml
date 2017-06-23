@@ -50,7 +50,7 @@
             RelativeLayout.YConstraint="{ConstraintExpression
                 Type=RelativeToParent, Property=Height, Factor=0.60, Constant=15}"/>
 
-        <Button Text="Login with Facebook" TextColor="White" BackgroundColor="#4267b2" Clicked="FacebookLoginBtnClicked"
+        <Button Text="Login with Facebook" TextColor="White" BackgroundColor="#4267b2" Clicked="FacebookLoginBtnClicked" x:Name="fbLoginBtn"
             RelativeLayout.XConstraint="{ConstraintExpression
                 Type=RelativeToParent, Property=Width, Factor=0.3}"
             RelativeLayout.YConstraint="{ConstraintExpression

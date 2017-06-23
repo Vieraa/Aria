@@ -11,16 +11,12 @@
 namespace Aria {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/tanglingtreats/Documents/GitHub/Aria/Aria/LoginPage.xaml")]
-    public partial class LoginPage : global::Xamarin.Forms.ContentPage {
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button fbLoginBtn;
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/tanglingtreats/Documents/GitHub/Aria/Aria/NotificationPage.xaml")]
+    public partial class NotificationPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(LoginPage));
-            fbLoginBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Button>(this, "fbLoginBtn");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(NotificationPage));
         }
     }
 }

@@ -12,23 +12,11 @@ namespace Aria {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/tanglingtreats/Documents/GitHub/Aria/Aria/AriaPage.xaml")]
-    public partial class AriaPage : global::Xamarin.Forms.ContentPage {
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.RelativeLayout relativeLayout;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.ScrollView scrollView;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.StackLayout verticalLayout;
+    public partial class AriaPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AriaPage));
-            relativeLayout = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.RelativeLayout>(this, "relativeLayout");
-            scrollView = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.ScrollView>(this, "scrollView");
-            verticalLayout = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.StackLayout>(this, "verticalLayout");
         }
     }
 }

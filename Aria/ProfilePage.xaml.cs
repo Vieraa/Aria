@@ -1,44 +1,64 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 using Xamarin.Forms;
+
+using Facebook.ViewModels;
 
 namespace Aria
 {
     public partial class ProfilePage : ContentPage
     {
+        //-------------------Properties-------------------
+        private bool hasGeneratedProfile = false;
+
+		private FacebookViewModel userViewModel = new FacebookViewModel();
+
+
+		//-------------------Methods-------------------
+		protected override void OnAppearing()
+        {
+			if (!hasGeneratedProfile)
+			{
+				GenerateUserProfile();
+			}
+        }
+
+
         public ProfilePage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+
         }
 
-        private void GenerateUserProfile()
+
+        private async void GenerateUserProfile()
         {
-			var stackLayout = new StackLayout
-			{
-				Margin = new Thickness(0, 15, 0, 5),
+            //Update profile name
+            userProfileName.Text = "";
 
-				Orientation = StackOrientation.Horizontal,
+            if(userViewModel.FacebookProfile != null)
+            {
+				userProfileName.Text = userViewModel.FacebookProfile.Name;
+				userProfilePic.Source = userViewModel.FacebookProfile.Picture.Data.Url;
+            }
+            else
+            {
+                await SetFbViewModel();
 
-				Children = {
-
-					new BoxView { BackgroundColor = Color.FromHex("3F99A2"),
-						WidthRequest = 50,
-						HeightRequest = 50,
-						TranslationX = 20,
-						HorizontalOptions = LayoutOptions.Start},
-
-					new Label { Text = "1st Profile Name",
-						TextColor = Color.FromHex("3F99A2"),
-						FontSize = 20.0,
-						TranslationX = 25,
-						TranslationY = 0,
-						HorizontalTextAlignment = TextAlignment.Center,
-						VerticalOptions = LayoutOptions.Center}
-			    }
-			};
+				userProfileName.Text = userViewModel.FacebookProfile.Name;
+				userProfilePic.Source = userViewModel.FacebookProfile.Picture.Data.Url;
+            }
 
 
+            hasGeneratedProfile = true;
+        }
+
+        public async Task SetFbViewModel()
+        {
+            await userViewModel.SetFacebookProfileAsync(App.AccessToken);
         }
     }
 }
