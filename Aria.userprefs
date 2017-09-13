@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{2C51F888-84F0-4B8F-B3F3-88C1B89DFCBD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Aria/ProfilePage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
     <Files>
-      <File FileName="Aria/AriaPage.xaml.cs" Line="63" Column="26" />
-      <File FileName="Aria/SocialFeedPage.xaml.cs" Line="9" Column="6" />
-      <File FileName="Aria/ProfilePage.xaml.cs" Line="59" Column="22" />
-      <File FileName="Aria/LoginPage.xaml.cs" Line="60" Column="49" />
+      <File FileName="Droid/MainActivity.cs" Line="23" Column="94" />
+      <File FileName="Droid/FirebaseIIDService.cs" Line="13" Column="40" />
+      <File FileName="Droid/MyFirebaseMessagingService.cs" Line="12" Column="65" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -13,6 +12,6 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Aria.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.Aria.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.ItemProperties.Aria.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6167A6F1-4C17-4CB5-9903-5AE249428CA4" />
 </Properties>
