@@ -154,6 +154,7 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable\flawklogo.png" />
     <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\drawable\ic_stat_ic_notification.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\Roboto-Light.ttf" />

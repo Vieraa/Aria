@@ -45,6 +45,7 @@ namespace Aria.Droid
             Log.Debug(TAG, "google app id: " + Resource.String.google_app_id);
 
 			base.OnCreate(bundle);
+            global::Xamarin.Forms.Forms.Init(this, bundle);
 			SetContentView(Resource.Layout.Main);
 
 

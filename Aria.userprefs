@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{2C51F888-84F0-4B8F-B3F3-88C1B89DFCBD}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
     <Files>
-      <File FileName="Droid/MainActivity.cs" Line="23" Column="94" />
+      <File FileName="Droid/MainActivity.cs" Line="48" Column="60" />
       <File FileName="Droid/FirebaseIIDService.cs" Line="13" Column="40" />
-      <File FileName="Droid/MyFirebaseMessagingService.cs" Line="12" Column="65" />
+      <File FileName="Droid/MyFirebaseMessagingService.cs" Line="36" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

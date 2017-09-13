@@ -5,6 +5,8 @@ using Android.Media;
 using Android.Util;
 using Firebase.Messaging;
 
+using Aria.Droid;
+
 namespace Aria.Droid
 {
 	[Service]
@@ -19,6 +21,28 @@ namespace Aria.Droid
 		{
 			Log.Debug(TAG, "From: " + message.From);
 			Log.Debug(TAG, "Notification Message Body: " + message.GetNotification().Body);
+            Log.Debug(TAG, "Notification Message Title: " + message.GetNotification().Title);
+
+            SendNotification(message.GetNotification().Title, message.GetNotification().Body);
+		}
+
+        //Display local notification when app is running in the foreground
+		void SendNotification(string messageTitle, string messageBody)
+		{
+			var intent = new Intent(this, typeof(MainActivity));
+			intent.AddFlags(ActivityFlags.ClearTop);
+			var pendingIntent = PendingIntent.GetActivity(this, 0, intent, PendingIntentFlags.OneShot);
+
+            //Edits the content of the notification
+			var notificationBuilder = new Notification.Builder(this)
+				.SetSmallIcon(Resource.Drawable.ic_stat_ic_notification)
+                .SetContentTitle(messageTitle)
+				.SetContentText(messageBody)
+				.SetAutoCancel(true)
+				.SetContentIntent(pendingIntent);
+
+			var notificationManager = NotificationManager.FromContext(this);
+			notificationManager.Notify(0, notificationBuilder.Build());
 		}
 	}
 }
