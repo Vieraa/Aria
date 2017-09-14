@@ -18,12 +18,12 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <service android:name="md5efb48d62618781f92fb7397500f52238.MyFirebaseIIDService">
+    <service android:name="md5efb48d62618781f92fb7397500f52238.FirebaseIIDService_Android">
       <intent-filter>
         <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
       </intent-filter>
     </service>
-    <service android:name="md5efb48d62618781f92fb7397500f52238.MyFirebaseMessagingService">
+    <service android:name="md5efb48d62618781f92fb7397500f52238.FirebaseMessagingService_Android">
       <intent-filter>
         <action android:name="com.google.firebase.MESSAGING_EVENT" />
       </intent-filter>

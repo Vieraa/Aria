@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Aria.Pages.ProfilePage">
+
+    <!-- Colour hexadecimals
+        Profile name = #000000
+        Profile message = #787878
+
+        Button name, section titles, Logo border = #7CB5DD
+        Button and button borders = #68DAEF
+
+        Icon and "Posted!" = #5BC1D4
+
+        Avatar background = #489AA9
+        Avatar = 7CBDC9
+    -->
+    
+	<RelativeLayout x:Name="relativeLayout" BackgroundColor="#69D9EF">
+       <Label Text="Profile" TextColor="White" FontSize="25" 
+            VerticalOptions="Center" HorizontalOptions="Center" 
+            RelativeLayout.XConstraint="{ConstraintExpression 
+                    Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-40}"
+            RelativeLayout.YConstraint="{ConstraintExpression 
+                    Type=RelativeToParent, Factor=0.2, Property=Y, Constant=25}">
+
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.Android>Roboto-Medium.ttf#Roboto-Medium</OnPlatform.Android>
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+        
+        <ScrollView BackgroundColor="White" x:Name="scrollView"
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+                    Type=RelativeToParent, Property=Width,Factor=1}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+                    Type=RelativeToParent, Property=Height, Factor=1, Constant=-120}"
+            RelativeLayout.XConstraint="{ConstraintExpression
+                    Type=RelativeToParent, Property=Width, Factor=0, Constant=0}"
+            RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToParent, Property=Height, Factor=0, Constant=65}">
+
+            <StackLayout Orientation="Vertical" 
+                x:Name="verticalLayout">
+                <StackLayout Orientation="Horizontal" Margin="0, 15">
+                    <!--<BoxView BackgroundColor="#489AA9" WidthRequest="70" HeightRequest="70" Margin="20, 0"></BoxView>-->
+                    <Image WidthRequest="70" HeightRequest="70" Margin="20, 0" x:Name="userProfilePic"/>
+
+                    <StackLayout Orientation="Vertical" Margin="5, 0">
+
+                        <Label Text="Profile Name" TextColor="#000000" FontSize="20" x:Name="userProfileName">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <OnPlatform.Android>Roboto-Light.ttf#Roboto-Light</OnPlatform.Android>
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+
+                        <Label Text="Profile Message Here" TextColor="#787878" FontSize="15" x:Name="userProfileMessage">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <OnPlatform.Android>Roboto-Light.ttf#Roboto-Light</OnPlatform.Android>
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+                    </StackLayout>
+                    
+                </StackLayout>
+                
+                
+                <!-- To be done in code-behind -->
+
+            </StackLayout>
+        </ScrollView>
+        <StackLayout BackgroundColor="Gray" Orientation="Horizontal"
+            RelativeLayout.WidthConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Width, Factor=1}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Height, Factor=0.1}"
+            RelativeLayout.YConstraint="{ConstraintExpression
+                Type=RelativeToParent, Property=Height, Factor=0.9}">
+
+            
+            
+        </StackLayout>
+    </RelativeLayout>
+</ContentPage>

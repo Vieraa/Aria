@@ -8,6 +8,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
+using Aria.Droid.GoogleFCM_Android;
+
 //--------Google Play Services--------
 using Android.Gms.Common;
 
@@ -23,10 +25,10 @@ namespace Aria.Droid
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
 		//google play services walkthrough
-		TextView msgText;
-        const string TAG = "MainActivity";
+		//TextView msgText;
+        //const string TAG = "MainActivity";
 
-        /*protected override void OnCreate(Bundle bundle)
+        protected override void OnCreate(Bundle bundle)
         {
             
 
@@ -38,9 +40,11 @@ namespace Aria.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             LoadApplication(new App());
-        }*/
 
-		protected override void OnCreate(Bundle bundle)
+            GooglePlayService_Android.IsPlayServicesAvailable(this);
+        }
+
+		/*protected override void OnCreate(Bundle bundle)
 		{
             Log.Debug(TAG, "google app id: " + Resource.String.google_app_id);
 
@@ -90,7 +94,7 @@ namespace Aria.Droid
 				msgText.Text = "Google Play Services is available.";
 				return true;
 			}
-		}
+		}*/
 
 
     }

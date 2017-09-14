@@ -1,6 +1,9 @@
 ﻿using Xamarin.Forms;
 using System.Threading.Tasks;
 
+using Aria.Pages;
+using Aria.GoogleFCM;
+
 namespace Aria
 {
     public partial class App : Application
@@ -15,7 +18,8 @@ namespace Aria
         private static bool isLoggedIn;
 
         private static string _AccessToken;
-        public static string AccessToken {
+        public static string AccessToken 
+        {
             get { return _AccessToken; }
         }
 
@@ -43,6 +47,7 @@ namespace Aria
 			else
 			{
 				isLoggedIn = true;
+                DependencyService.Get<IFirebaseIIDService>().OnTokenRefresh();
 			}
         }
 
@@ -74,6 +79,7 @@ namespace Aria
             await _AppProfilePage.SetFbViewModel();
             isLoggedIn = true;
 
+            DependencyService.Get<IFirebaseIIDService>().OnTokenRefresh();
         }
 
         //Nav page may not be needed
