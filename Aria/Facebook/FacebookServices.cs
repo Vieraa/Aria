@@ -18,9 +18,15 @@ namespace Facebook.Services
     {
 		public async Task<FacebookProfile> GetFacebookProfileAsync(string accessToken)
 		{
+            //Get friend list from FB API
+            //Show friends that uses Flawk
+            //Get friends' picture, name and description
+
+            //Include json array in FacebookProfile
+
 			var requestUrl =
-				"https://graph.facebook.com/v2.9/me" +
-				"?fields=name,picture" +
+				"https://graph.facebook.com/v2.11/me" +
+				"?fields=name,picture,friends" +
 				"&access_token=" + accessToken;
 
 			var httpClient = new HttpClient();

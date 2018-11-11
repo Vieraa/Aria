@@ -75,12 +75,12 @@ namespace Aria.Pages
                 var at = url.Replace("https://www.facebook.com/connect/login_success.html#access_token=", "");
 
 
-                if (Xamarin.Forms.Device.RuntimePlatform == Xamarin.Forms.Device.WinPhone || 
+                /*if (Xamarin.Forms.Device.RuntimePlatform == Xamarin.Forms.Device.WinPhone || 
                     Xamarin.Forms.Device.RuntimePlatform == Xamarin.Forms.Device.Windows)
                 {
 
                     at = url.Replace("https://www.facebook.com/connect/login_success.html#access_token=", "");
-                }
+                }*/
 
                 var accessToken = at.Remove(at.IndexOf("&expires_in="));
 

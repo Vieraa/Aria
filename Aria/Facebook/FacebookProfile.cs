@@ -4,8 +4,10 @@ namespace Facebook.Models
 {
     public class FacebookProfile
     {
-		public string Name { get; set; }
-		public Picture Picture { get; set; }
+		public string Name { get; set; }        //Name of this user
+
+        public Friend[] Friends { get; set; }   //Friends of this user
+		public Picture Picture { get; set; }    //Profile picture
 		public string Locale { get; set; }
 		public string Link { get; set; }
 		public Cover Cover { get; set; }
@@ -19,6 +21,17 @@ namespace Facebook.Models
 		public string Gender { get; set; }
 		public bool IsVerified { get; set; }
 		public string Id { get; set; }
+    }
+
+    //Hierarchy
+    //Friend has a Name, an ID and a Picture (A description for the profile in the future
+
+    //Friends who installed the app
+    public class Friend
+    {
+        public string Name { get; set; }
+        public Picture Picture { get; set; }
+        public string Id { get; set; }
     }
 
 	public class Picture
