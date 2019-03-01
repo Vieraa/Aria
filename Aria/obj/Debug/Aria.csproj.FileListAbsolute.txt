@@ -42,3 +42,4 @@
 /Users/tanglingtreats/Documents/GitHub/Aria/Aria/obj/Debug/Aria.csproj.CopyComplete
 /Users/tanglingtreats/Documents/GitHub/Aria/Aria/obj/Debug/Aria.dll
 /Users/tanglingtreats/Documents/GitHub/Aria/Aria/obj/Debug/Aria.pdb
+/Users/tanglingtreats/Documents/GitHub/Aria/Aria/obj/Debug/Aria.csprojAssemblyReference.cache

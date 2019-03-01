@@ -1,19 +1,43 @@
 ﻿<Properties StartupConfiguration="{2C51F888-84F0-4B8F-B3F3-88C1B89DFCBD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Aria/Pages/LoginPage.xaml.cs">
     <Files>
-      <File FileName="Aria/Pages/LoginPage.xaml.cs" Line="70" Column="26" />
-      <File FileName="Aria/Facebook/FacebookServices.cs" Line="28" Column="38" />
+      <File FileName="Aria/Pages/LoginPage.xaml.cs" Line="11" Column="23" />
+      <File FileName="Aria/Facebook/FacebookServices.cs" Line="29" Column="29" />
       <File FileName="Aria/Pages/ProfilePage.xaml.cs" Line="47" Column="17" />
       <File FileName="Aria/Facebook/FacebookProfile.cs" Line="7" Column="53" />
       <File FileName="Droid/MainActivity.cs" Line="38" Column="1" />
+      <File FileName="Droid/GoogleFCM_Android/FirebaseMessagingService_Android.cs" Line="37" Column="30" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="2610" Column="3" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Aria" expanded="True">
+            <Node name="Aria" expanded="True">
+              <Node name="Facebook" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="LoginPage.xaml" expanded="True">
+                  <Node name="LoginPage.xaml.cs" selected="True" />
+                </Node>
+                <Node name="ProfilePage.xaml" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Aria.Droid" expanded="True">
+              <Node name="Assets" expanded="True" />
+              <Node name="GoogleFCM_Android" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Aria.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Aria.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6167A6F1-4C17-4CB5-9903-5AE249428CA4" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Aria.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.ItemProperties.Aria.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6167A6F1-4C17-4CB5-9903-5AE249428CA4" />
 </Properties>
