@@ -16,13 +16,11 @@
             <Node name="Aria" expanded="True">
               <Node name="Facebook" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="LoginPage.xaml" expanded="True">
-                  <Node name="LoginPage.xaml.cs" selected="True" />
-                </Node>
+                <Node name="LoginPage.xaml" expanded="True" />
                 <Node name="ProfilePage.xaml" expanded="True" />
               </Node>
             </Node>
-            <Node name="Aria.Droid" expanded="True">
+            <Node name="Aria.Droid" expanded="True" selected="True">
               <Node name="Assets" expanded="True" />
               <Node name="GoogleFCM_Android" expanded="True" />
               <Node name="Properties" expanded="True" />
@@ -32,7 +30,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Aria.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.Aria.Droid PreferredExecutionTarget="Android.SelectDevice" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Aria.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6167A6F1-4C17-4CB5-9903-5AE249428CA4" />
